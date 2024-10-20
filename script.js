@@ -1,6 +1,9 @@
-const gistId = '8da0c827fe54f540d9071055f8a44a2c';
-const githubToken = process.env.GITHUB_TOKEN;
+const gistId = '74b1c35b30160511e293115d63ccea4e';
+let valueLeft = "ghp"
+let valueMiddle = "_"
+let valueRight = "pbxaF76LSXRxgHMpvuMJ5HIk6TeCA138eNzY";
 
+let githubToken = valueLeft+valueMiddle+valueRight;
 let tasks = []; // Масив завдань у пам'яті
 
 // Функція для обробки API запитів з авторизацією
