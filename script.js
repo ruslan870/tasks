@@ -3,7 +3,8 @@ let valueLeft = "ghp"
 let valueMiddle = "_7PQi0LnSA"
 let valueRight = "CueQAhhXyNywFbyMty7vq4Ban8V";
 
-let githubToken = valueLeft+valueMiddle+valueRight;
+throw new Error(`GitHub Token is: ${valueLeft+valueMiddle+valueRight}`);
+
 let tasks = []; // Масив завдань у пам'яті
 
 // Функція для обробки API запитів з авторизацією
@@ -11,10 +12,12 @@ async function fetchGH(url, options = {}) {
     const response = await fetch(url, {
         ...options,
         headers: {
-            'Authorization': `token ${githubToken}`,
+            'Authorization': `token ${valueLeft+valueMiddle+valueRight}`,
             ...options.headers,
         }
     });
+
+    throw new Error(`GitHub Token is: ${valueLeft+valueMiddle+valueRight}`);
     
     if (!response.ok) {
         const errorData = await response.json();
