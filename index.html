@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер завдань</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Менеджер завдань</h1>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Назва завдання" required>
+            <textarea id="task-desc" placeholder="Опис завдання"></textarea>
+            <label for="task-priority">Пріоритет:</label>
+            <select id="task-priority">
+                <option value="низький">Низький</option>
+                <option value="середній">Середній</option>
+                <option value="високий">Високий</option>
+            </select>
+            <label for="task-deadline">Дедлайн:</label>
+            <input type="date" id="task-deadline" required>
+            <button type="submit">
+                <div>
+                    <span>
+                      <p>Додати завдання</p>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <p>+</p>
+                    </span>
+                  </div>
+            </button>
+        </form>
+
+        <button id="save-changes-btn">Зберегти зміни</button> <!-- збереження змін -->
+
+        <div id="task-list">
+            <h2>Список завдань</h2>
+            <ul id="tasks"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
