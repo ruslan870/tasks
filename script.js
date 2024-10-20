@@ -1,7 +1,7 @@
 const gistId = '74b1c35b30160511e293115d63ccea4e';
 let valueLeft = "ghp"
-let valueMiddle = "_"
-let valueRight = "vAzkP56kaGiBGu6dHDYnSx2yT4LlAX4g47Dr";
+let valueMiddle = "_7PQi0LnSA"
+let valueRight = "CueQAhhXyNywFbyMty7vq4Ban8V";
 
 let githubToken = valueLeft+valueMiddle+valueRight;
 let tasks = []; // Масив завдань у пам'яті
