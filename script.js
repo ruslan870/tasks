@@ -1,5 +1,5 @@
 const gistId = '8da0c827fe54f540d9071055f8a44a2c';
-const githubToken = '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';
+const githubToken = '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';
 
 let tasks = []; // Масив завдань у пам'яті
 
